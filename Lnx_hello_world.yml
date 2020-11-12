@@ -1,5 +1,6 @@
 - name: This is a hello-world example
-  hosts: all
+  gather_facts: true
+  hosts: lin
   tasks:
     - name: Create a file called '/tmp/helloworld.txt' with the content 'HELLO WORLD'.
       copy:
